@@ -3,7 +3,7 @@
 # that Gradle 9's Kotlin DSL rejects.
 agp = "9.4.1"
 # The one InMobi SDK version: the wrapper compiles against it, and the .NET package reads it from
-# here to ship the same SDK from Maven (VpnHood.AppLib.Ads.InMobi.Android.csproj).
+# here to ship the same SDK from Maven (VpnHood.AppLogic.Ads.InMobi.Android.csproj).
 inmobiAds = "11.4.1"
 activity = "1.13.0"
 appcompat = "1.8.0"

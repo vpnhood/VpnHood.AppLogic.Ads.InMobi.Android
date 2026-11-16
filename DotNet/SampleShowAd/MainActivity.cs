@@ -1,4 +1,4 @@
-using VpnHood.AppLib.Ads.InMobi.Android;
+using VpnHood.AppLogic.Ads.InMobi.Android;
 using VpnHood.Core.Client.Devices.Android;
 using VpnHood.Core.Client.Devices.Android.ActivityEvents;
 

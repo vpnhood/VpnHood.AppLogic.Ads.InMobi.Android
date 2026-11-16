@@ -1,11 +1,11 @@
 ﻿using Com.Vpnhood.Inmobi.Ads;
-using VpnHood.AppLib.Abstractions.Ads;
-using VpnHood.AppLib.Abstractions.Ads.AdExceptions;
+using VpnHood.AppLogic.Abstractions.Ads;
+using VpnHood.AppLogic.Abstractions.Ads.AdExceptions;
 using VpnHood.Core.Client.Devices.Abstractions.UiContexts;
 using VpnHood.Core.Client.Devices.Android;
 using VpnHood.Core.Client.Devices.Android.Utils;
 
-namespace VpnHood.AppLib.Ads.InMobi.Android;
+namespace VpnHood.AppLogic.Ads.InMobi.Android;
 
 public class InMobiAdProvider(string accountId, string placementId, TimeSpan initializeTimeout, bool isDebugMode) 
     : IAdProvider

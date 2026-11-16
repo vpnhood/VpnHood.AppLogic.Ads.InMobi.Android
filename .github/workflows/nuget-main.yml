@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUILD_CONFIG: 'Release'
-      PROJECT_NAME: 'DotNet/VpnHood.AppLib.Ads.InMobi.Android/VpnHood.AppLib.Ads.InMobi.Android.csproj'
+      PROJECT_NAME: 'DotNet/VpnHood.AppLogic.Ads.InMobi.Android/VpnHood.AppLogic.Ads.InMobi.Android.csproj'
 
     steps:
     - name: Checkout
@@ -94,7 +94,7 @@ jobs:
       run: dotnet pack $PROJECT_NAME --configuration $BUILD_CONFIG -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
 
     # Trusted publishing: exchange the workflow's OIDC token for a short-lived nuget.org API key
-    # (policy: vpnhood/VpnHood.AppLib.Ads.InMobi.Android + nuget-main.yml, created by trudyhood).
+    # (policy: vpnhood/VpnHood.AppLogic.Ads.InMobi.Android + nuget-main.yml, created by trudyhood).
     # The old NUGET_API_KEY_ADS secret could not push the renamed package id.
     - name: NuGet login (trusted publishing)
       if: github.event_name == 'push'
